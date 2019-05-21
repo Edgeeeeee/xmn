@@ -1,7 +1,7 @@
 # 包含一个学生类
 # 一个sayhello函数
 # 一个打印语句
-
+import pymysql
 class Student():
     def __init__(self,name = "noname",age = 18):
         self.name = name
