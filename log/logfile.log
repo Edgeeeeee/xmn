@@ -1,0 +1,14 @@
+DEBUG:root:This is a debug log
+INFO:root:This is a info log
+WARNING:root:This is a warning log
+ERROR:root:This is a error log
+CRITICAL:root:This is a critical log
+DEBUG:root:this is a dubug log
+WARNING:root:this is a WARINING log
+2019-06-13 19:02:35,413----DEBUG----This is a debug log
+2019-06-13 19:02:35,413----INFO----This is a info log
+2019-06-13 19:02:35,414----WARNING----This is a warning log
+2019-06-13 19:02:35,414----ERROR----This is a error log
+2019-06-13 19:02:35,414----CRITICAL----This is a critical log
+2019-06-13 19:02:35,414----DEBUG----this is a dubug log
+2019-06-13 19:02:35,414----WARNING----this is a WARINING log
