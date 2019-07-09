@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS的三种基本选择器</title>
+    <style>
+        /* 标签选择器 通过标签来设置元素的样式*/
+        /*div{*/
+            /*width: 100px;*/
+            /*height: 100px;*/
+            /*background-color: red;*/
+        /*}*/
+        /*类选择器 影响分为可控制,相对较小*/
+        .red{background-color: red;}
+        .green{background-color: green;}
+        .item{
+            height: 100px;
+            width: 100px;}
+        /*id选择器,通过id属性的值来设置元素*/
+        /*注意 id在html种具有唯一性,不能重名,在js种会出现问题.*/
+        /*三种基本选择器优先级问题:影响范围越大的选择器,优先级越低*/
+        #box1{
+            height: 100px;
+            width: 100px;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="red item "></div>
+    <div class="item green"></div>
+    <div id="box1"></div>
+</body>
+</html>

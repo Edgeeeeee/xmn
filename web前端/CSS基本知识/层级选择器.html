@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS层级选择器</title>
+    <style>
+        /*层级选择器 通过父级元素来设置自己元素的样式 或者子元素的子元素的样式 高一级的样式也会影响到低一级同名的标签.*/
+        /*层级选择器可以和多种选择器混合使用*/
+        .wrap{
+            width: 800px;
+            height: 800px;
+            background-color: deeppink;
+        }
+        .wrap div{
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+        }
+        .wrap .in{
+            width: 200px;
+            height: 200px;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="in"> </div>
+        <div></div>
+        <div >
+            <div ></div>
+            <div class="in"></div>
+        </div>
+    </div>
+    <div class="wrap">
+
+    </div>
+
+</body>
+</html>

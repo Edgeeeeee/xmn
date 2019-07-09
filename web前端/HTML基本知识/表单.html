@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单标签</title>
+</head>
+<body>
+
+    <!--form标签来划定一个表单区域
+    action：数据的 提交地址
+    method：提交方式，GET方式,POST方式
+        GET传输是用URL地址来传输数据的，不安全，能看到密码等敏感信息。 为默认方式，根据浏览器的不通数据大小不同，传输数据有不同的限制
+        POST: 不通过url地址传参，相对安全，没有具体的大小限制。一般表单指定使用post传输。
+    enctype="multipart/form-data 如果表单内有文件上传，则必须添加这个属性，用于文件转码，重点。
+    -->
+    <form action="" method="" enctype="multipart/form-data">
+
+        <!--普通文本输入框
+        必须要加入type属性和name属性
+        name会替换为name属性中的值，value则为input输入框内的内容，
+        以字典形式发送出去
+        value：设置默认值
+        {name：value, sex:0/1, hob=[basketball, yumaoqiu, pingpangqiu]， eduname：0/1/2/3/4/5， }
+        -->
+            用户名:<input type="text" name="username" placeholder="请输入用户名"><br>
+            密码: <input type="password" name="password" placeholder="请输入密码"><br>
+        <!--单选框，必须有name属性，并且一组单选框name属性的值必须相同。-->
+            性别：<input type="radio" name="sex" value="1" checked> 男
+                  <input type="radio" name="sex" value="2">女<br>
+        <!--
+            多选框 type="checkbox" 必须指定name和value属性，并且name值要相同
+        -->
+            爱好：<br><input type="checkbox" name="hobp[]" value="baskerball"> 篮球 <br>
+                  <input type="checkbox" name="hob[]" value="pingpangqiu"> 乒乓球 <br>
+                  <input type="checkbox" name="hob[]" value="yumaoqiu"> 羽毛球 <br>
+
+        <!--select 下拉框 必须配个option来使用-->
+        学历： <br>
+            <select name="eduname" id="">
+                <option value="0">小学</option>
+                <option value="1">初中</option>
+                <option value="2">高中</option>
+                <option value="3">大学</option>
+                <option value="4">硕士</option>
+                <option value="5">博士</option>
+            </select> <br>
+        <!--文件上传 type="file"-->
+            请选择上传文件: <input type="file" name="file"> <br>
+            请输入个人说明： <br>
+            <textarea name="text" id="">请输入个人信息</textarea> <br>
+        <!--按钮-->
+            <input type="submit" value="确定"> <br>
+            <button disabled>确定</button>
+        <!--重置按钮 -->
+            <input type="reset">
+        <!--隐藏域 hidden 不需要用户查看和填写的信息 和表单反在一起提交-->
+        <input type="hidden" name="" value="">
+
+
+
+
+
+
+    </form>
+</body>
+</html>

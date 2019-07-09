@@ -1,0 +1,39 @@
+<! DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>HTML常用的行级元素</title>
+    </head>
+
+    <body>
+        <!--链接标签  a标签 有href属性，跟的是跳转的网址，或者本地文件-->
+            <a href="http://www.baidu.com">百度</a>
+            <a href="./块级标签案例.html" target="_blank">块级标签案例</a>
+        <!--图像标签 img(单标签)
+        src属性定位到引入的图片（图片的地址，网络资源或者本地资源
+        alt属性用于文件加载失败后的替代文字（必须存在）
+        title属性 鼠标悬停在图片上的提示信息
+        width属性设置宽度
+        height设置宽度
+        设置宽度和高度会等比例拉伸，如果两个都设置，图片会变形，建议只设置宽度
+        -->
+        <img src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2961887126,2194762662&fm=26&gp=0.jpg" alt="这是一个图片标签" title="这是一只猫">
+        <!--
+            <img src="./xxxxxx" alt="这是本地图片>"
+        -->
+
+    <!--文本标签-->
+        <!--加粗 b标签-->
+        <b><br></br>这是加粗标签<br></b>
+        <!--倾斜 i标签-->
+        <i>这是倾斜标签<br></i>
+        <!--这是strong标签-->
+        <strong>这是strong标签，具有强调语义</strong>
+        <!--em标签 倾斜-->
+        <em>这是em标签，斜体，具有强调语义。 </em>
+    <!--无语义的行级元素 一般span标签配合css使用-->
+        <span style="color:greenyellow"><br>这是被span包裹的部分</span>，这是在span之外的部分
+    <!--实体字符 &gt;：> &lt;：< 其他的百度搜，注意后面的分号-->
+        <br>1&nbsp;&nbsp;&nbsp;&nbsp;&lt;&nbsp;&nbsp;&nbsp;&nbsp;2
+    </body>
+</html>
