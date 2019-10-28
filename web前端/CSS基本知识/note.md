@@ -211,7 +211,7 @@
 - 浮动元素之间没有垂直margin的合并
 
 ### 清除浮动
-- 父级上增加属性overfl：hidden
+- 父级上增加属性overflow：hidden
 - 在最后一个子元素的后面加一个空的div，给他样式属性clear：both（不推荐）
 - 吃用成熟的清浮动样式类，clearfix
 

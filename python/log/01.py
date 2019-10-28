@@ -1,5 +1,4 @@
 import logging
-
 LOG_FORMAT = "%(asctime)s----%(levelname)s----%(message)s"
 
 # 简单的配置。
